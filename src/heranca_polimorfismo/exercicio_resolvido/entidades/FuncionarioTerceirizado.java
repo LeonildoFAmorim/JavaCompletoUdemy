@@ -1,4 +1,4 @@
-package polimorfismo.exercicio_resolvido.entidades;
+package heranca_polimorfismo.exercicio_resolvido.entidades;
 
 public class FuncionarioTerceirizado extends Funcionario {
 	private double despesaAdicional;

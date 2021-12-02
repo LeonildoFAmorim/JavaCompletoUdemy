@@ -1,4 +1,4 @@
-package polimorfismo.exercio_fixacao.entidades;
+package heranca_polimorfismo.exercio_fixacao.entidades;
 
 import java.util.ArrayList;
 import java.util.List;

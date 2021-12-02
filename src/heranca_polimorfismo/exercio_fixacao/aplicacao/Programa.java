@@ -1,4 +1,4 @@
-package polimorfismo.exercio_fixacao.aplicacao;
+package heranca_polimorfismo.exercio_fixacao.aplicacao;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-import polimorfismo.exercio_fixacao.entidades.Produto;
-import polimorfismo.exercio_fixacao.entidades.ProdutoImportado;
-import polimorfismo.exercio_fixacao.entidades.ProdutoUsado;
+import heranca_polimorfismo.exercio_fixacao.entidades.Produto;
+import heranca_polimorfismo.exercio_fixacao.entidades.ProdutoImportado;
+import heranca_polimorfismo.exercio_fixacao.entidades.ProdutoUsado;
 
 public class Programa {
 

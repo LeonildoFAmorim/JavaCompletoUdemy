@@ -1,12 +1,12 @@
-package polimorfismo.exercicio_resolvido.aplicacao;
+package heranca_polimorfismo.exercicio_resolvido.aplicacao;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-import polimorfismo.exercicio_resolvido.entidades.Funcionario;
-import polimorfismo.exercicio_resolvido.entidades.FuncionarioTerceirizado;
+import heranca_polimorfismo.exercicio_resolvido.entidades.Funcionario;
+import heranca_polimorfismo.exercicio_resolvido.entidades.FuncionarioTerceirizado;
 
 public class Programa {
 
