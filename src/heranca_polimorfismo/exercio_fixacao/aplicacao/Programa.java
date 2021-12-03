@@ -26,39 +26,29 @@ public class Programa {
 		for (int i = 1; i <= qtdP; i++) {
 			System.out.println("Dados do produto #" + i);
 			System.out.print("comum, usado, ou importado : escolha (c, u, i): ");
-			char resposta = sc.next().charAt(0);
+			char tipo = sc.next().charAt(0);
 			sc.nextLine();
-			if (resposta == 'i') {
-				System.out.print("Nome do produto: ");
-				String nomeProduto = sc.nextLine();
-				System.out.print("Valor do produto: ");
-				double valorProduto = sc.nextDouble();
+			System.out.print("Nome do produto: ");
+			String nomeProduto = sc.nextLine();
+			System.out.print("Valor do produto: ");
+			double valorProduto = sc.nextDouble();
+			if (tipo == 'c') {
+				produtos.add(new Produto(nomeProduto, valorProduto));
+			} else if (tipo == 'i') {
 				System.out.print("Taxa alfandega: ");
 				double taxaAlfandega = sc.nextDouble();
 				produtos.add(new ProdutoImportado(nomeProduto, valorProduto, taxaAlfandega));
-			} else if (resposta == 'c') {
-				System.out.print("Nome do produto: ");
-				String nomeProduto = sc.nextLine();
-				System.out.print("Valor do produto: ");
-				double valorProduto = sc.nextDouble();
-				produtos.add(new Produto(nomeProduto, valorProduto));
 			} else {
-				System.out.print("Nome do produto: ");
-				String nomeProduto = sc.nextLine();
-				System.out.print("Valor do produto: ");
-				double valorProduto = sc.nextDouble();
 				System.out.print("Data de fabricacao: (DD/MM/AAAA): ");
 				Date dataFabricacao = sdf.parse(sc.next());
 				produtos.add(new ProdutoUsado(nomeProduto, valorProduto, dataFabricacao));
 			}
-
 		}
 		System.out.println();
 		System.out.println("Lista de produtos: ");
-		for(Produto produto : produtos) {
+		for (Produto produto : produtos) {
 			System.out.println(produto);
 		}
-
 		sc.close();
 	}
 }

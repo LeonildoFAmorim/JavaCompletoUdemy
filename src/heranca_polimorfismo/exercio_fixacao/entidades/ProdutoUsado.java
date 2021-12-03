@@ -3,12 +3,12 @@ package heranca_polimorfismo.exercio_fixacao.entidades;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class ProdutoUsado extends Produto{
+public class ProdutoUsado extends Produto {
 	private Date dataFabricacao;
 	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-	
+
 	public ProdutoUsado() {
-		
+
 	}
 
 	public ProdutoUsado(String nome, double preco, Date dataFabricacao) {
@@ -26,6 +26,7 @@ public class ProdutoUsado extends Produto{
 
 	@Override
 	public String toString() {
-		return super.toString() + " DataFabricacao: " + sdf.format(dataFabricacao);
+		return getNome() + "(usado) $ " + String.format("%.2f", getPreco()) + " DataFabricacao: "
+				+ sdf.format(dataFabricacao);
 	}
 }

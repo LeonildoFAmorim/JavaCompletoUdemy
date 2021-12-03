@@ -6,9 +6,9 @@ import java.util.List;
 public class Produto {
 	private String nome;
 	private double preco;
-	
+
 	public Produto() {
-		
+
 	}
 
 	public Produto(String nome, double preco) {
@@ -31,9 +31,9 @@ public class Produto {
 	public void setPreco(double preco) {
 		this.preco = preco;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Produto: " + nome + ", Valor: " + preco;
+		return nome + " $ " + String.format("%.2f", preco);
 	}
 }
