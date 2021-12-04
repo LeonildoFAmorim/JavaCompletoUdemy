@@ -1,0 +1,23 @@
+package classes_abstratas.exercicio_fixacao.entidades;
+
+public class PessoaFisica extends Contribuinte {
+	private double gastosSaude;
+
+	public PessoaFisica() {
+		super();
+	}
+
+	public PessoaFisica(String nome, double rendaAnual, double gastosSaude) {
+		super(nome, rendaAnual);
+		this.gastosSaude = gastosSaude;
+	}
+
+	@Override
+	public double calculaImposto() {
+		if (getRendaAnual() < 20000) {
+			return getRendaAnual() * 0.15 - gastosSaude * 0.5;
+		} else {
+			return getRendaAnual() * 0.25 - gastosSaude * 0.5;
+		}
+	}
+}
