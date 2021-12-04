@@ -2,6 +2,10 @@ package heranca_polimorfismo.exercicio_resolvido.entidades;
 
 public class FuncionarioTerceirizado extends Funcionario {
 	private double despesaAdicional;
+	
+	public FuncionarioTerceirizado() {
+		super();
+	}
 
 	public FuncionarioTerceirizado(String nome, int horasTrabalhadas, double valorHora, double valorAdicional) {
 		super(nome, horasTrabalhadas, valorHora);
