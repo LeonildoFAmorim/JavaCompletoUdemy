@@ -13,7 +13,6 @@ public class Reserva {
 	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy"); // static para não ficar criando um novo
 																				// sdf cada vez que um objeto dessa
 																				// classe for instaciada
-
 	public Reserva(int numeroQuarto, Date checkin, Date checkout) {
 		this.numeroQuarto = numeroQuarto;
 		validaNumeroQuarto(numeroQuarto);
