@@ -26,7 +26,7 @@ public class ProdutoImportado extends Produto {
 
 	@Override
 	public String toString() {
-		return getNome() + " $ " + String.format("%.2f", precoTotal()) + " (Taxa de alfandega: " + taxaAlfandega + ")";
+		return nome + " $ " + String.format("%.2f", precoTotal()) + " (Taxa de alfandega: " + taxaAlfandega + ")";
 
 	}
 }

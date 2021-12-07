@@ -26,7 +26,7 @@ public class ProdutoUsado extends Produto {
 
 	@Override
 	public String toString() {
-		return getNome() + "(usado) $ " + String.format("%.2f", getPreco()) + " DataFabricacao: "
+		return nome + "(usado) $ " + String.format("%.2f", getPreco()) + " DataFabricacao: "
 				+ sdf.format(dataFabricacao);
 	}
 }

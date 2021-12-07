@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Produto {
-	private String nome;
-	private double preco;
+	protected String nome;
+	protected double preco;
 
 	public Produto() {
 
