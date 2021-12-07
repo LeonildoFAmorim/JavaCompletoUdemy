@@ -14,8 +14,7 @@ public class Reserva {
 																				// sdf cada vez que um objeto dessa
 																				// classe for instaciada
 	public Reserva(int numeroQuarto, Date checkin, Date checkout) {
-		this.numeroQuarto = numeroQuarto;
-		validaNumeroQuarto(numeroQuarto);
+		//validaNumeroQuarto(numeroQuarto);
 		validaDatas(checkin, checkout);
 		this.numeroQuarto = numeroQuarto;
 		this.checkin = checkin;

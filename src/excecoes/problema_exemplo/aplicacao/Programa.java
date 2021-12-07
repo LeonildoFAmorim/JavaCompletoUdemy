@@ -36,10 +36,10 @@ public class Programa {
 			System.out.println(reserva);
 		} catch (ParseException e) {
 			System.out.println("Data no formato invalido");
-			
+
 		} catch (ExcecaoDeNegocio e) {
 			System.out.println("Erro ao reservar: " + e.getMessage());
-			
+
 		} catch (RuntimeException e) {
 			System.out.println("Digite um valor valido");
 		}
