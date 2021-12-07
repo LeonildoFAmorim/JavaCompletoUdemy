@@ -63,6 +63,12 @@ public class ContaBancaria {
         }
     }
 
+    public static void validaNumero(int numero) {
+    	if (numero < 0) {
+    		throw new  ExcecaoDeNegocio ("O numero precisa ser maior que zero");
+    	}
+    }
+    
     @Override
     public String toString() {
         return "ContaBancaria{" +
