@@ -45,7 +45,11 @@ public class Contrato {
 		return parcelas;
 	}
 	
-	public void addParcela(Parcela parcela) {
+	public void adicionarParcela(Parcela parcela) {
 		parcelas.add(parcela);
+	}
+	
+	public void removeParcela(Parcela parcela) {
+		parcelas.remove(parcela);
 	}
 }
