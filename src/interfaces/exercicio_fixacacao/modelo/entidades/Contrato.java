@@ -9,7 +9,11 @@ public class Contrato {
 	private Date data;
 	private double valorTotal;
 	
-	private static List <Parcela> parcelas = new ArrayList<>();
+	private static List <Parcela> parcelas = new ArrayList<Parcela>();
+	
+	public Contrato() {
+		
+	}
 
 	public Contrato(Integer numeroContrato, Date data, double valorTotal) {
 		this.numeroContrato = numeroContrato;
@@ -41,6 +45,10 @@ public class Contrato {
 		this.valorTotal = valorTotal;
 	}
 
+	/* no caso de listas, coleções não colocamoso o método set, porque não faz
+	 sentido trocar a lista que está associada ao objeto. É permitido adicionar 
+	 e remover elementos na lista, mas nunca trocar a lista.:*/
+	
 	public List<Parcela> getParcelas() {
 		return parcelas;
 	}
